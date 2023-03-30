@@ -1,7 +1,7 @@
 clear;
 %导入数据
 File=["E2270K.txt" "E2330K.txt" "E2360K.txt" "E2400K.txt" "E2440K.txt" ...
-    "E2500K.txt" "E2580"];
+    "E2500K.txt" "E2580.txt"];
 Lab_Data=load("Data\"+File(4));
 lambda=Lab_Data(:,1);%横坐标
 E_e=Lab_Data(:,2);%纵坐标
