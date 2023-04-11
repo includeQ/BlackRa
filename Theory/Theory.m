@@ -7,8 +7,8 @@ k=1.380649*10^-23;
 c1=2*pi*h*c^2;
 c2=h*c/k;
 %自变量
-T=2270;%自定义温度
-lambda=800:1:2500;%单位nm
+T=3000;%自定义温度
+lambda=800:1:10000;%单位nm
 Lambda=lambda*10^-9;%单位m
 %计算辐射密度理论曲线
 E_t=(c1./power(Lambda,5)).*(1./(exp(c2./(Lambda.*T))-1))*10^-9;
@@ -16,5 +16,5 @@ E_t=(c1./power(Lambda,5)).*(1./(exp(c2./(Lambda.*T))-1))*10^-9;
 %绘图
 plot(lambda,E_t);
 xlabel('波长\lambda(nm)')
-xlim([800,2500]);
+xlim([800,10000]);
 ylabel('能量密度\rho(\lambda,T)[W/(mm^3)]');

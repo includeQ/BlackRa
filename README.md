@@ -1,2 +1,4 @@
 # SImple-Blackbody-Virtual-simulation-experiments
 使用实验测量数据，制作基于MATLAB下的appdesigner简单的黑体辐射虚拟仿真实验
+如需使用软件，请下载MainApp.mlapp在matlab中运行即可，其余代码为作者测试使用
+
